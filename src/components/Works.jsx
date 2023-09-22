@@ -4,7 +4,7 @@ import { styles } from "../styles"
 import { github } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
-import { fadeIn, textVariant } from "../utils/motion"
+import { textVariant } from "../utils/motion"
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
 
 const ProjectCard = ({
@@ -91,18 +91,10 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>My Projects</p>
-      <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("","",0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Description
-        </motion.p>          
-      </div>
+      <motion.div variants={textVariant()} className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
+        <p className={`${styles.sectionSubText} `}>My work</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+      </motion.div>      
       <div className="mt-20 flex flex-wrap gap-7">
       <VerticalTimeline>
         {projects.map((project, index) => (
@@ -117,4 +109,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "")
+export default Works
