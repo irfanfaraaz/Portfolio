@@ -1,4 +1,7 @@
 import {
+    logo,
+    logo2,
+    logo3,
     mobile,
     backend,
     creator,
@@ -15,14 +18,11 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    cpp,
+    python,
+    tensorflow,
+    express,
   } from "../assets";
   
   export const navLinks = [
@@ -112,154 +112,198 @@ import {
       name: "docker",
       icon: docker,
     },
+    // {
+    //   name: "CPP",
+    //   icon: cpp,
+    // },
+    // {
+    //   name: "Python",
+    //   icon: python,
+    // },
+    // {
+    //   name: "Tensorflow",
+    //   icon: tensorflow,
+    // },
+    // {
+    //   name: "Express",
+    //   icon: express,
+    // },
   ];
   
   const experiences = [
+    
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Full stack Developer Intern",
+      company_name: "Kite India",
+      icon: logo3,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Apr 2023 - JUL 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Internship at Kite India exposed me to Nestjs, Nextjs, GraphQL, Amazon Amplify.",
+        "Made back-end projects using Expressjs and Open API.",
+        "Developed a Twitter auto-tweet app integrating twitter API and OpenAi API.",
+        "Leveraged OpenAI API for various prompt engineering based projects.",
       ],
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Ethereum Transaction Website",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web3-based platform that allows you to make basic Ethereum transactions using a user-friendly interface. Simply connect your MetaMask account to view the latest transactions and interact with the Ethereum network.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Solidity",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/irfanfaraaz/sifKrypt",
+      icon: logo3,
+      iconBg: "#E6DEDD",
     },
     {
-      name: "Job IT",
+      name: "OpenAI X Twitter",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Engineered a specialized application by harnessing the capabilities of the OpenAI and Twitter APIs. This innovative tool empowers users to input topic preferences and desired posting frequencies, subsequently generating and autonomously publishing engaging tweets. To maximize reach and relevance, the application intelligently incorporates appropriate hashtags.",
       tags: [
         {
-          name: "react",
+          name: "TwitterAPI",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "OpenAIAPI",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "AutoTweet",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/irfanfaraaz/auto-tweet-app",
+      icon: logo,
+      iconBg: "#E6DEDD",
     },
     {
-      name: "Trip Guide",
+      name: "Promptify",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web application that enables users to  to store and manage prompts for different AI models effectively.",
       tags: [
         {
-          name: "nextjs",
+          name: "Nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "MongoDB",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/irfanfaraaz/Promptify-project-",
+      icon: logo3,
+      iconBg: "#E6DEDD",
     },
+    {
+      name: "Stock Price Predictor",
+      description:
+        "Developed a robust Stock Price Prediction model utilizing Recurrent Neural Networks (RNN) for enhanced forecasting accuracy, showcasing proficiency in machine learning and deep learning techniques.",
+      tags: [
+        {
+          name: "RNN",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "DeepLearning",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Machine Learning",
+          color: "pink-text-gradient",
+        },
+      ],
+      source_code_link: "https://github.com/irfanfaraaz/Stock_prediction",
+      icon: logo,
+      iconBg: "#E6DEDD",
+    },
+    {
+      name: "Cancer Classification",
+      description:
+        "Developedmachine learning project focused on cancer classification. The primary goal of this project is to build a classification model that can effectively classify cancer cases into two classes: Class 2 and Class 4.",
+      tags: [
+        {
+          name: "Classification",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "XGBoost",
+          color: "green-text-gradient",
+        },
+        {
+          name: "DecisionTree",
+          color: "pink-text-gradient",
+        },
+      ],
+      source_code_link: "https://github.com/irfanfaraaz/Cancer-Classification_Model",
+      icon: logo3,
+      iconBg: "#E6DEDD",
+    },
+    {
+      name: "Target Audience Identification",
+      description:
+        "Developed  a machine learning model for precise target audience identification through clustering techniques like K Means and Hierarchical Clustering, enhancing marketing strategy effectively.",
+      tags: [
+        {
+          name: "Clustering",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "KMeans",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Hierarchical",
+          color: "pink-text-gradient",
+        },
+      ],
+      source_code_link: "https://github.com/irfanfaraaz/Finding_TargetAudience",
+      icon: logo,
+      iconBg: "#E6DEDD",
+    },
+    {
+      name: "Basic CNN Model",
+      description:
+        "Developed  a machine learning model for image classification, distinguishing between dogs and cats with high accuracy.",
+      tags: [
+        {
+          name: "CNN",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "DeepLearning",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tensorflow",
+          color: "pink-text-gradient",
+        },
+      ],
+      source_code_link: "https://github.com/irfanfaraaz/First_CNN",
+      icon: logo3,
+      iconBg: "#E6DEDD",
+    },
+    
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

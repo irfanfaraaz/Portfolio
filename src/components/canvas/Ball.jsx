@@ -21,9 +21,9 @@ const Ball = (props) => {
         />
         <Decal 
         position={[0,0,1]}
-          map ={decal}
-          rotation={[2*Math.PI,0,6.25]}
-          flatShading
+        map ={decal}
+        rotation={[2*Math.PI,0,6.25]}
+        flatShading
         />
       </mesh>
     </Float>
