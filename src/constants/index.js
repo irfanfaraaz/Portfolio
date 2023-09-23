@@ -135,6 +135,28 @@ import {
   
   const projects = [
     {
+      name: "AI powered 3d Merch maker",
+      description:
+     " Devised a website using React, Three.js, and DALL·E API. Offers a user-friendly interface for designing and previewing custom merchandise. Users can upload their own logos or textures and apply them to the merchandise. Incorporates artificial intelligence (AI) functionality to automatically generate design options.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dall.E",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Threejs",
+          color: "pink-text-gradient",
+        },
+      ],
+      source_code_link: "https://github.com/irfanfaraaz/3d-Merch-design-AI",
+      icon: logo,
+      iconBg: "#E6DEDD",
+    },
+    {
       name: "Ethereum Transaction Website",
       description:
         "Web3-based platform that allows you to make basic Ethereum transactions using a user-friendly interface. Simply connect your MetaMask account to view the latest transactions and interact with the Ethereum network.",
