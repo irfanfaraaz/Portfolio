@@ -40,9 +40,9 @@ const ProjectCard = ({
                     scale: 1,
                     speed: 450,
                 }}
-                className="bg-tertiary p-2 rounded-2xl sm:w-[360px] w-full"
+                className=" bg-tertiary p-2 rounded-2xl  w-full"
             >
-                <div className="relative w-full h-[55px]">
+                <div className="relative w-full h-[55px] ">
                     {/* <img
             src={image}
             alt='project_image'
@@ -75,7 +75,7 @@ const ProjectCard = ({
                 </div>
 
                 <div className="mt-4 flex flex-wrap gap-2">
-                    {tags.map((tag) => (
+                    {tags.map((tag: any) => (
                         <p
                             key={`${name}-${tag.name}`}
                             className={`text-[14px] ${tag.color}`}
@@ -84,14 +84,14 @@ const ProjectCard = ({
                         </p>
                     ))}
                 </div>
-                <a
+                {/* <a
                     href={source_code_link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:underline mt-4 block"
                 >
                     Source Code
-                </a>
+                </a> */}
             </Tilt>
         </VerticalTimelineElement>
     );
@@ -102,7 +102,7 @@ const Works = () => {
         <>
             <motion.div
                 variants={textVariant()}
-                className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+                className={`${styles.padding} max-w-7xl mx-auto  relative z-0`}
             >
                 <p className={`${styles.sectionSubText} `}>My work</p>
                 <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
