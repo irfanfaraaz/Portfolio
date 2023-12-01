@@ -116,6 +116,17 @@ const technologies = [
 
 const experiences = [
     {
+        title: "Backend Developer Intern",
+        company_name: "Desktivo Tech",
+        icon: logo,
+        iconBg: "#E6DEDD",
+        date: "Nov 2023 - Present",
+        points: [
+            "•Actively developing microservices in NestJS,Postgres and TypeScript for a scalable project, coupled with Docker.",
+            "•Contributing to a collaborative team, addressing challenges and enhancing the development workflow.",
+        ],
+    },
+    {
         title: "Full stack Developer Intern",
         company_name: "Kite India",
         icon: logo3,
