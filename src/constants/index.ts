@@ -122,8 +122,8 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "Nov 2023 - Present",
         points: [
-            "•Actively developing microservices in NestJS,Postgres and TypeScript for a scalable project, coupled with Docker.",
-            "•Contributing to a collaborative team, addressing challenges and enhancing the development workflow.",
+            "Actively developing microservices in NestJS,Postgres and TypeScript for a scalable project, coupled with Docker.",
+            "Contributing to a collaborative team, addressing challenges and enhancing the development workflow.",
         ],
     },
     {
