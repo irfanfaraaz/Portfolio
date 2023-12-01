@@ -116,6 +116,17 @@ const technologies = [
 
 const experiences = [
     {
+        title: "Backend Developer Intern",
+        company_name: "Desktivo Tech",
+        icon: logo,
+        iconBg: "#E6DEDD",
+        date: "Nov 2023 - Present",
+        points: [
+            "•Actively developing microservices in NestJS,Postgres and TypeScript for a scalable project, coupled with Docker.",
+            "•Contributing to a collaborative team, addressing challenges and enhancing the development workflow.",
+        ],
+    },
+    {
         title: "Full stack Developer Intern",
         company_name: "Kite India",
         icon: logo3,
@@ -175,28 +186,28 @@ const projects = [
         icon: logo3,
         iconBg: "#E6DEDD",
     },
-    {
-        name: "AI powered 3d Merch maker",
-        description:
-            " Devised a website using React, Three.js, and DALL·E API. Offers a user-friendly interface for designing and previewing custom merchandise. Users can upload their own logos or textures and apply them. Incorporates artificial intelligence (AI) functionality to automatically generate design options.",
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Dall.E",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Threejs",
-                color: "pink-text-gradient",
-            },
-        ],
-        source_code_link: "https://github.com/irfanfaraaz/3d-Merch-design-AI",
-        icon: logo,
-        iconBg: "#E6DEDD",
-    },
+    // {
+    //     name: "AI powered 3d Merch maker",
+    //     description:
+    //         " Devised a website using React, Three.js, and DALL·E API. Offers a user-friendly interface for designing and previewing custom merchandise. Users can upload their own logos or textures and apply them. Incorporates artificial intelligence (AI) functionality to automatically generate design options.",
+    //     tags: [
+    //         {
+    //             name: "React",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "Dall.E",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "Threejs",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     source_code_link: "https://github.com/irfanfaraaz/3d-Merch-design-AI",
+    //     icon: logo,
+    //     iconBg: "#E6DEDD",
+    // },
     {
         name: "Ethereum Transaction Website",
         description:
