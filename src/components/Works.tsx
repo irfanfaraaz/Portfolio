@@ -101,7 +101,7 @@ const Works = () => {
     return (
         <>
             <motion.div
-                variants={textVariant()}
+                variants={textVariant(0.1)}
                 className={`${styles.padding} max-w-7xl mx-auto  relative z-0`}
             >
                 <p className={`${styles.sectionSubText} `}>My work</p>
