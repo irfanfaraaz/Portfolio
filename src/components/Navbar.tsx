@@ -87,9 +87,14 @@ const Navbar = () => {
                                 active === Link.title
                                     ? "text-white"
                                     : "text-secondary"
-                            } hover:text-white text-[18px] font-medium cursor-pointer`}
+                            } hover:text-white text-[18px] font-medium`}
                             onClick={() => {
                                 setActive(Link.title);
+                            }}
+                            onKeyDown={(event) => {
+                                if (event.key === "Enter") {
+                                    setActive(Link.title);
+                                }
                             }}
                         >
                             <a href={`#${Link.id}`}>{Link.title}</a>
@@ -104,6 +109,11 @@ const Navbar = () => {
                         onClick={() => {
                             setToggle(!toggle);
                         }}
+                        onKeyDown={(event) => {
+                            if (event.key === "Enter") {
+                                setToggle(!toggle);
+                            }
+                        }}
                     />
                     <div
                         className={`${
@@ -111,7 +121,14 @@ const Navbar = () => {
                         } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
                     >
                         <ul className="list-none flex  justify-end items-start flex-col gap-4">
-                            <li onClick={() => setToggle(!toggle)}>
+                            <li
+                                onClick={() => setToggle(!toggle)}
+                                onKeyDown={(event) => {
+                                    if (event.key === "Enter") {
+                                        setToggle(!toggle);
+                                    }
+                                }}
+                            >
                                 <a
                                     href="https://www.linkedin.com/in/your-linkedin-profile"
                                     target="_blank"
@@ -121,7 +138,14 @@ const Navbar = () => {
                                 </a>
                             </li>
 
-                            <li onClick={() => setToggle(!toggle)}>
+                            <li
+                                onClick={() => setToggle(!toggle)}
+                                onKeyDown={(event) => {
+                                    if (event.key === "Enter") {
+                                        setToggle(!toggle);
+                                    }
+                                }}
+                            >
                                 <a
                                     href="https://github.com/your-github-profile"
                                     target="_blank"
@@ -131,7 +155,14 @@ const Navbar = () => {
                                 </a>
                             </li>
 
-                            <li onClick={() => setToggle(!toggle)}>
+                            <li
+                                onClick={() => setToggle(!toggle)}
+                                onKeyDown={(event) => {
+                                    if (event.key === "Enter") {
+                                        setToggle(!toggle);
+                                    }
+                                }}
+                            >
                                 <a
                                     href="https://www.instagram.com/your-instagram-profile"
                                     target="_blank"
@@ -151,6 +182,12 @@ const Navbar = () => {
                                     onClick={() => {
                                         setToggle(!toggle);
                                         setActive(Link.title);
+                                    }}
+                                    onKeyDown={(event) => {
+                                        if (event.key === "Enter") {
+                                            setToggle(!toggle);
+                                            setActive(Link.title);
+                                        }
                                     }}
                                 >
                                     <a href={`#${Link.id}`}>{Link.title}</a>
